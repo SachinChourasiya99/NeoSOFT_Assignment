@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+
+  #image {
+      width: 250px;
+      height: 160px;
+  }
+
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  figure {
+    margin: 20px;
+    width: 250px;
+    text-align: center;
+  }
+
+  figure img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+
+  figure:hover img {
+    transform: scale(1.4);
+  }
+
+  figcaption {
+    margin-top: 10px;
+  }
