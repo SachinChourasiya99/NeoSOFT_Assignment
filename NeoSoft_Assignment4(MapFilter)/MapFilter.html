@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MapFilter</title>
+    </head>
+    <body>
+        <script>
+            const bookPriceArr = [567.50,345.40,767.45,567.60,600,400,230,450,350.50,560.40,800.56,890.9];
+
+            // 1. Find all prices less than 500
+            const priceLessThan = bookPriceArr.filter(price => price < 500);
+            console.log("Price less than 500 - ",priceLessThan);
+
+            // 2. Find the first price greater than 600
+            const firstPriceGreaterThan = bookPriceArr.find(price => price > 600);
+            console.log("First Price grater than 600 - ",firstPriceGreaterThan);
+
+            // 3. Find all prices between 500 and 600
+            const betweenPrice = bookPriceArr.filter(price => price >= 500 && price <= 600);
+            console.log("Price between 500 & 600 - ",betweenPrice);
+
+            // 4. Display sum of all prices
+            const sumOfPrice = bookPriceArr.reduce((total,price) => total + price,0);
+            console.log("Sum of price - ",sumOfPrice);
+
+            // 5. Display sum of all prices but initial value of sum should be 100
+            const sumOfPriceWithInitialValue = bookPriceArr.reduce((total,price) => total + price,100);
+            console.log("Sum of price with initial value 100 - ",sumOfPriceWithInitialValue);
+
+            // 6. Double every price from array and display new prices
+            const doublePrice = bookPriceArr.map(price => price * 2);
+            console.log("Double price - ",doublePrice);
+
+            // 7. Display sum of prices which are less than 500
+            const sumOfPriceLessThan = bookPriceArr.filter(price => price < 500).reduce((total,price) => total + price,0);
+            console.log("Sum of price less than 500 - ",sumOfPriceLessThan);
+        </script>
+    </body>
+</html>

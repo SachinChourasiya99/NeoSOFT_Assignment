@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MapFilter2</title>
+    </head>
+
+    <body>
+        <script>
+            const bookNames = ['Learn Java','Basics of Python', 'Advanced Java Concepts','Web Basics','Easy Learning Python','Web Fundamentals','Java Fundamentals'];
+
+            // 1. Find all books starting with 'Web'
+            const booksStartingWithWeb = bookNames.filter(book => book.startsWith('Web'));
+            console.log("Books starting with 'Web':", booksStartingWithWeb);
+
+            // 2. Find all books which are related to Java
+            const javaRelatedBooks = bookNames.filter(book => book.toLowerCase().includes('java'));
+            console.log("Java related books:", javaRelatedBooks);
+
+            // 3. Prepend 'Neo-' to every Book Name and Display new book names
+            const newBookNames = bookNames.map(book => 'Neo-' + book);
+            console.log("New book names:", newBookNames);
+
+            // 4. Display sum of length of every book name
+            const sumOfBookNameLengths = bookNames.reduce((total, book) => total + book.length, 0);
+            console.log("Sum of length of every book name:", sumOfBookNameLengths);
+        </script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
