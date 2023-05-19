@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Slideshow</title>
+  <style>
+    .slideshow-container {
+      position: relative;
+      height: 600px;
+    }
+
+    .slideshow-container img {
+      position: absolute;
+      /* top: 0; */
+      /* left: 0; */
+      width: 100%;
+      height: 100%;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="slideshow-container">
+    <img src="image1.jpg" alt="Image 1">
+    <img src="image2.jpg" alt="Image 2">
+    <img src="image3.jpg" alt="Image 3">
+    <img src="image4.jpg" alt="Image 4">
+    <img src="image5.jpg" alt="Image 5">
+    <img src="image6.jpg" alt="Image 6">
+    <img src="image7.jpg" alt="Image 7">
+    <img src="image8.jpg" alt="Image 8">
+    <img src="image9.png" alt="Image 9">
+    <img src="image10.jpg" alt="Image 10">
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      var images = $('.slideshow-container img');
+      var currentIndex = 0;
+
+      function showNextImage() {
+        // Fade out the current image
+        $(images[currentIndex]).fadeOut();
+
+        // Increment the index to show the next image
+        currentIndex = (currentIndex + 1) % images.length;
+
+        // Fade in the next image
+        $(images[currentIndex]).fadeIn();
+      }
+
+      // Initial fade in for the first image
+      $(images[currentIndex]).fadeIn();
+
+      // Automatically change image after 3 seconds
+      setInterval(showNextImage, 3000);
+      
+    });
+  </script>
+</body>
+</html>
