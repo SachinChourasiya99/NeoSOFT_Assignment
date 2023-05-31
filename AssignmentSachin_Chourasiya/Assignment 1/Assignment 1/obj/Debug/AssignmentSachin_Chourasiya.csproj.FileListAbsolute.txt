@@ -1,0 +1,7 @@
+C:\Users\User\Downloads\AssignmentCSharp\AssignmentSachin_Chourasiya\Assignment 1\Assignment 1\bin\Debug\Assignment 1.exe.config
+C:\Users\User\Downloads\AssignmentCSharp\AssignmentSachin_Chourasiya\Assignment 1\Assignment 1\bin\Debug\Assignment 1.exe
+C:\Users\User\Downloads\AssignmentCSharp\AssignmentSachin_Chourasiya\Assignment 1\Assignment 1\bin\Debug\Assignment 1.pdb
+C:\Users\User\Downloads\AssignmentCSharp\AssignmentSachin_Chourasiya\Assignment 1\Assignment 1\obj\Debug\AssignmentSachin_Chourasiya.csproj.AssemblyReference.cache
+C:\Users\User\Downloads\AssignmentCSharp\AssignmentSachin_Chourasiya\Assignment 1\Assignment 1\obj\Debug\AssignmentSachin_Chourasiya.csproj.CoreCompileInputs.cache
+C:\Users\User\Downloads\AssignmentCSharp\AssignmentSachin_Chourasiya\Assignment 1\Assignment 1\obj\Debug\Assignment 1.exe
+C:\Users\User\Downloads\AssignmentCSharp\AssignmentSachin_Chourasiya\Assignment 1\Assignment 1\obj\Debug\Assignment 1.pdb
